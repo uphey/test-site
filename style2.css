@@ -1,0 +1,274 @@
+@font-face {
+  font-family: Catamaran;
+  src: url(font/Catamaran/Catamaran-VariableFont_wght.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:lang(zh-Hant)  {
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+:lang(en)  {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.body {
+        background-color: #1B262C;
+}
+
+.brand-logo {
+    width: 5rem;   
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: .1rem;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color: black;
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.navbar-brand-eng {
+    font-family: 'Catamaran';
+}
+
+
+.navbar-light {
+    background-color: #e3f2fd;
+    z-index: 100;
+}
+
+.nav-item {
+    padding-right: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.45);
+}
+
+.dropdown-item:active {
+    background-color: #e3f2fd;
+    color: #000000;
+}
+
+.dropdown-item.active{
+    background-color: #e3f2fd;
+    color: #000000;
+    font-weight: 700;
+}
+
+@media (min-width: 992px) {
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ display: none; }
+}	
+
+
+
+.header-container a:hover {
+  color: black;
+}
+
+@media (max-width: 426px) {
+    .brand-logo {
+        width: 3.5rem;   
+}
+    .navbar-brand {
+        font-size: 1.2rem;
+}
+    h6 {
+        font-size: .7rem;
+    }
+}
+
+header {
+    background-color: white;
+    z-index: 100;
+}
+
+.header-container {
+    padding: 1.5rem 1rem 1.5rem 3.5rem;
+}
+
+
+#navbarSupportedContent {
+    font-size: 1rem;
+    margin-left: 3rem;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 600;
+}
+
+.navbar-text {
+    margin-right: 3rem;
+    font-weight: 400;
+}
+
+.navbar-toggler {
+    margin-left: 3rem;
+}
+@media (max-width: 426px) {
+    .header-container {
+    padding: 1rem 1rem 1rem 1.6rem;
+}
+    .navbar-toggler {
+    margin-left: 0rem;
+}
+}
+
+main {
+    padding: 3rem 10rem 0rem 10rem;
+    background-color: #81adde;
+    background-image: url('images/home_section.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro, #people, #workshop, #seminar {
+    background-image: url('images/intro_section.jpg');
+}
+
+#photo {
+    background-image: url('.jpg');
+}
+
+.home-content {
+    color: #000000;
+    background-color: rgb(255, 255, 255, .95);
+    padding: 3rem;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0, .1);
+    z-index: 1;
+}
+
+
+
+.expand {
+    padding-bottom: 4rem;
+}
+@media (max-width: 991px) {
+    main {
+    padding: 3rem 3rem 2rem 3rem;
+    }
+    .home-content {
+    padding: 2.5rem;
+}
+}
+@media (max-width: 426px) {
+    .expand {
+    display: none;
+}
+    main {
+    padding: 2rem 1.5rem 2rem 1.5rem;
+}
+    .home-content {
+    padding: 2rem;
+}
+}
+}
+@media (min-height: 1024px) {
+    .expand {
+    display:block;
+        padding-bottom: 20rem;
+}
+}
+
+h5 {
+    font-weight: 700;
+}
+
+#people h5 {
+    padding-top: 1.6rem;
+}
+.people-table {
+    margin: 1rem 0;
+}
+
+.people-name {
+    font-weight: 700;
+}
+
+#people .table-light, .table-light>td, .table-light>th {
+    background-color: rgb(0,0,0,0);
+}
+
+#people tbody tr {
+    border-bottom: solid 1px #bfd9ec;
+}
+
+#people .table-light tbody+tbody, .table-light td, .table-light th, .table-light thead th {
+    border-color: #bfd9ec;
+}
+
+@media (max-width: 426px) {
+.people-table td {
+    display: block;
+    padding: .2rem 0;
+}
+    .people-table thead {
+        display: none;
+    }
+    #people tbody tr {
+    display: block;
+    padding: .3rem 0;
+}
+    #people .table-light tbody+tbody, .table-light td, .table-light th, .table-light thead th {
+    border-color: rgb(0,0,0,0);
+}
+}
+
+@media (max-width: 766px) {
+    #workshop a, #seminar a, #photo a {
+    overflow: hidden;
+    display:flex;
+}
+}
+
+#map li {
+    list-style: none;
+}
+
+.map-item li {
+    padding-bottom: .5rem;
+}
+
+footer {
+    background-color: #1B262C;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footertext {
+    color: rgba(255, 255, 255,.5);
+}
+
+.footertext a {
+    text-decoration: none;
+    color: rgba(255, 255, 255,.5);
+}
+
+.footcontainer {
+    padding: 2rem 3rem 1rem 3rem;
+}
+
+
+.text-small {
+    font-size: .9rem;
+}
+
+.d-md-inline {
+    margin: 0 1rem;
+}
+
+.text-pad1 {
+    padding: 0 .7rem 0 0;
+}
+
+.text-pad2 {
+    padding: 0 0 0 .7rem;
+}
+
