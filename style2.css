@@ -8,7 +8,10 @@
     src: url(font/Open_Sans/OpenSans-Regular.ttf)
         url(font/Open_Sans/OpenSans-SemiBold.ttf)
 }
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*  {
+    font-family: 'Open Sans', sans-serif;
+}
 
 :lang(zh)  {
     font-family: 'Noto Sans HK', sans-serif;
@@ -16,18 +19,6 @@
 
 :lang(zh-Hant)  {
     font-family: 'Noto Sans HK', sans-serif;
-}
-
-:lang(en)  {
-    font-family: 'Open Sans', sans-serif;
-}
-
-:lang(en-gb)  {
-    font-family: 'Open Sans', sans-serif;
-}
-
-:lang(en-us)  {
-    font-family: 'Open Sans', sans-serif;
 }
 
 .body {
