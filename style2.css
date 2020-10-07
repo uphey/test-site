@@ -93,6 +93,9 @@
     h6 {
         font-size: .7rem;
     }
+    .home-title {
+        font-size: 1.6rem;
+    }
 }
 
 header {
@@ -131,12 +134,15 @@ header {
 
 /* CONTENT STYLE */
 main {
-    padding: 3rem 10rem 0rem 10rem;
+    padding: 3rem 10rem 3rem 10rem;
     background-color: #81adde;
-    background-image: url('images/home_section.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#main {
+    background-image: url('images/home_section.jpg');
 }
 
 #intro, #people, #workshop, #seminar {
@@ -147,6 +153,26 @@ main {
     background-image: url('.jpg');
 }
 
+.main-text {
+  font-weight: 1000;
+  background-image: linear-gradient(#b9e1ff, #b9e1ff);
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-size: 100% .2rem;
+}
+
+.main-text:hover {
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+}
+
+.main-text {
+  transition: background-size .4s, background-position .2s ease-in .4s;
+}
+.main-text:hover {
+  transition: background-position .4s, background-size .2s ease-in .4s;
+}
+
 .home-content {
     color: #000000;
     background-color: rgb(255, 255, 255, .95);
@@ -155,14 +181,89 @@ main {
     z-index: 1;
 }
 
-
-
-.expand {
-    padding-bottom: 4rem;
+#home-section-wrap {
+    background-color: #1d2e3b;
 }
+
+.home-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 3rem 1rem 1rem 1rem;
+    z-index: 2;
+}
+
+.section-content {
+    color: #000000;
+    background-color: rgb(255, 255, 255, .95);
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.section-content h5 {
+    padding: 0.7rem 3rem 0 3rem;
+}
+
+.section-content p {
+    font-size: 0.9rem;
+    color: darkgray;
+    padding: 0rem 2rem 1.5rem 2rem;
+    display: flex;
+}
+
+.img-wrap {
+    overflow: hidden;
+}
+
+.section-content img {
+    width: 100%;
+    transition: ease .8s;
+}
+
+.section-content img:hover {
+    transform: scale(1.2);
+}
+
+.section-content li:before {
+    content:        "";
+    border-color:   transparent #111;
+    border-style:   solid;
+    border-width:   0.35rem 0 0.35rem 0.45rem;
+    display:        block;
+    height:         0;
+    left:           -1rem;
+    position:       relative;
+    top:            1.1rem;
+    width:          0;
+}
+
+@media (max-width: 426px) {
+.home-section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.section-content {
+    margin: 0 .5rem;
+    margin-bottom: 1rem;
+}
+    
+.section-content h5 {
+    padding: 0.2rem 3rem 1rem 3rem;
+}
+
+.section-content p {
+    display: none;
+}
+    
+}
+
+
+
 @media (max-width: 991px) {
     main {
-    padding: 3rem 3rem 2rem 3rem;
+    padding: 3rem 3rem 3rem 3rem;
     }
     .home-content {
     padding: 2.5rem;
