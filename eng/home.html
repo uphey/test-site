@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="../style2.css">
     
     <!-- Fonts -->
@@ -92,22 +92,22 @@
 
     <div id="home-section-wrap">
     <section class="container-md home-section animate__animated animate__fadeIn">
-        <a href="intro.html"><div class="section-content">
+        <a href="intro.html"><div data-aos="fade-up" class="section-content">
             <div class="img-wrap"><img src="../images/section_content1.jpg"></div>
             <h5><li>Introduction</li></h5>
             <p>Promoting research on Chinese language teaching in tertiary education and exploring innovative teaching methodologies.</p>
         </div></a>
-        <a href="people.html"><div class="section-content">
+        <a href="people.html"><div data-aos="fade-up" class="section-content">
             <div class="img-wrap"><img src="../images/section_content2.jpg"></div>
             <h5><li>People</li></h5>
             <p>Director, Members of the Management Committee, and other colleagues.</p>
         </div></a>
-        <a href="workshop.html"><div class="section-content">
+        <a href="workshop.html"><div data-aos="fade-up" class="section-content">
             <div class="img-wrap"><img src="../images/section_content3.jpg"></div>
             <h5><li>Conferences and Workshops</li></h5>
             <p>Details of Different Forums and Workshops offered by Chinese Language Teaching Development Centre.</p>
             </div></a>
-        <a href="seminar.html"><div class="section-content">
+        <a href="seminar.html"><div data-aos="fade-up" class="section-content">
             <div class="img-wrap"><img src="../images/section_content4.jpg"></div>
             <h5><li>Seminars</li></h5>
             <p>Provide comprehensive and practical Chinese teaching on fundamental language and literary knowledge.</p>
@@ -120,35 +120,21 @@
       <div class="overlay-mf"></div>
       <div class="footcontainer">
           <div class="footertext col-12 col-md">
-
-                
-	           <div class="d-block align-top text-left mb-sm-3">
-						<!--
-						<div class="d-block d-lg-flex justify-content-end align-items-end text-lg-center text-small" style="height:100%;">
-
-						-->
-                        
-						<div class="d-block text-center">
-							
-							<div class="d-block text-small">
+			
+							<div class="align-top left text-small d-sm-inline">
 								Copyright © 2020. All Rights Reserved. <a href="http://www.chi.cuhk.edu.hk/index.php/en/home-en" target="_blank"><br><b>Department of Chinese Language and Literature, The Chinese University of Hong Kong</b></a> 
 							</div>
-                            <br>
-							<div class="d-block text-small">
-								<div class="d-block d-md-inline">
+                            
+                            <div class="align-top right text-small d-sm-inline">
+								<div class="pr-1 d-inline">
                                     <a href="http://www.cuhk.edu.hk/english/privacy.html" target="_blank">Privacy Policy</a>
                                 </div>
-								<div class="d-block d-md-inline">
+								<div class="pl-1 d-inline">
                                     <a href="http://www.cuhk.edu.hk/english/disclaimer.html" target="_blank">Disclaimer</a>
-                                </div>
+                                </div> 
 							</div>
-
-						</div>
-
-                </div>
             </div>
       </div>
-      
   </footer>
 <!-- End  Footer -->
         <!-- Optional JavaScript -->
@@ -162,5 +148,13 @@
     <script>
 $('p').linkify();
     </script>    
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    duration: 800,
+    })
+    </script>
+    
 </body>
 </html>

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
       
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="style2.css">
     
     <!-- Fonts -->
@@ -92,65 +92,50 @@
     
     <div id="home-section-wrap">
     <section class="container-md home-section animate__animated animate__fadeIn">
-        <a href="chi/intro.html"><div class="section-content">
+        <a href="chi/intro.html"><div data-aos="fade-up" class="section-content">
             <div class="img-wrap"><img src="images/section_content1.jpg"></div>
             <h5><li>中心簡介</li></h5>
             <p>提倡大專語文教學研究，致力探索語文教學的新方法。</p>
         </div></a>
-        <a href="chi/people.html"><div class="section-content">
+        <a href="chi/people.html"><div data-aos="fade-up" class="section-content">
             <div class="img-wrap"><img src="images/section_content2.jpg"></div>
             <h5><li>中心成員</li></h5>
             <p>中心主任、管理委員會成員，及各級職員名單。</p>
         </div></a>
-        <a href="chi/workshop.html"><div class="section-content">
+        <a href="chi/workshop.html"><div data-aos="fade-up" class="section-content">
             <div class="img-wrap"><img src="images/section_content3.jpg"></div>
             <h5><li>研討會和學術論壇</li></h5>
             <p>大學中文論壇、座談會、研討會之詳情。</p>
             </div></a>
-        <a href="chi/seminar.html"><div class="section-content">
+        <a href="chi/seminar.html"><div data-aos="fade-up" class="section-content">
             <div class="img-wrap"><img src="images/section_content4.jpg"></div>
             <h5><li>學術講座</li></h5>
             <p>各個文化學術講座旨在提升學生的中文修養。</p>
         </div></a>
      </section>
-        </div>
+    </div>
 
-    
 
   <!-- ======= Footer ======= -->
   <footer>
       <div class="overlay-mf"></div>
       <div class="footcontainer">
           <div class="footertext col-12 col-md">
-
-                
-	           <div class="d-block align-top text-left mb-sm-3">
-						<!--
-						<div class="d-block d-lg-flex justify-content-end align-items-end text-lg-center text-small" style="height:100%;">
-
-						-->
-                        
-						<div class="d-block text-center">
-							
-							<div class="d-block text-small">
-								2020 <a href="http://www.chi.cuhk.edu.hk/index.php/zh-TW/" target="_blank"><b>香港中文大學中國語言及文學系</b></a> 版權所有<br> 
+			
+							<div class="align-top left text-small d-sm-inline">
+								2020 <a href="http://www.chi.cuhk.edu.hk/index.php/zh-TW/" target="_blank"><b>香港中文大學中國語言及文學系</b></a> 版權所有
 							</div>
-                            <br>
-							<div class="d-block text-small">
-								<div class="d-block d-md-inline">
+                            
+                            <div class="align-top right text-small d-sm-inline">
+								<div class="pr-1 d-inline">
                                     <a href="http://www.cuhk.edu.hk/chinese/privacy.html" target="_blank">私穩政策</a>
                                 </div>
-								<div class="d-block d-md-inline">
+								<div class="pl-1 d-inline">
                                     <a href="http://www.cuhk.edu.hk/chinese/disclaimer.html" target="_blank">免責聲明</a>
-                                </div>
+                                </div> 
 							</div>
-
-						</div>
-
-                </div>
             </div>
       </div>
-      
   </footer>
 <!-- End  Footer -->
         <!-- Optional JavaScript -->
@@ -158,6 +143,19 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="../linkify.min.js"></script>
+    <script src="../linkify-jquery.min.js"></script>
+
+    <script>
+$('p').linkify();
+    </script>    
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    duration: 800,
+    })
+    </script>
 
     
 </body>
