@@ -175,6 +175,7 @@ main {
 
 .home-content {
     color: #000000;
+    background-color: white;
     background-color: rgb(255, 255, 255, .95);
     padding: 3rem;
     box-shadow: 0px 0px 30px rgb(0, 0, 0, .1);
@@ -195,6 +196,7 @@ main {
 
 .section-content {
     color: #000000;
+    background-color: white;
     background-color: rgb(255, 255, 255, .95);
     margin: 0 1rem;
     margin-bottom: 2rem;
