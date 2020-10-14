@@ -175,7 +175,6 @@ main {
 
 .home-content {
     color: #000000;
-    background-color: white;
     background-color: rgb(255, 255, 255, .95);
     padding: 3rem;
     box-shadow: 0px 0px 30px rgb(0, 0, 0, .1);
@@ -196,7 +195,6 @@ main {
 
 .section-content {
     color: #000000;
-    background-color: white;
     background-color: rgb(255, 255, 255, .95);
     margin: 0 1rem;
     margin-bottom: 2rem;
@@ -240,13 +238,52 @@ main {
     width:          0;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1080px) {
+    .section-content {
+        height: 340px;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-content {
+        height: 320px;
+    }
+}
+
+@media (max-width: 885px) {
+    .section-content {
+        height: 310px;
+    }
+}
+
+@media (max-width: 831px) {
+    .section-content {
+        height: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .section-content {
+        height: 280px;
+    }
+}
+
+.section-content-eng {
+    height: auto;
+}
+
+.section-content-eng h5 {
+    padding: 0.4rem 3rem 1.1rem 3rem;
+}
+
+@media (max-width: 766px) {
 .home-section {
     grid-template-columns: repeat(1, 1fr);
     padding: 2rem 1rem 1rem 1rem;
 }
 
 .section-content {
+    height: auto;
     margin: 0 .5rem;
     margin-bottom: 1rem;
 }
@@ -316,8 +353,10 @@ h5 {
     margin: 1rem 0;
 }
 
-.people-name {
+.people-name a {
     font-weight: 700;
+    text-decoration: underline;
+    color: #000000;
 }
 
 #people .table-light, .table-light>td, .table-light>th {
@@ -424,5 +463,9 @@ footer {
 .text-pad2 {
     padding: 0 0 0 .7rem;
 }
+
+.bi.bi-box-arrow-right {
+margin-bottom: 3px;
+  }
 
 /* EFFECT */

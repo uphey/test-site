@@ -17,8 +17,8 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-    
-    
+
+    <link rel="import" href="https://www.chltcac.cuhk.edu.hk/activitiesreview">
 </head>
 
 <body class="body">
@@ -85,6 +85,18 @@
             
         <p>活動相片：<br>
         https://www.chltcac.cuhk.edu.hk/activitiesreview</p><br>
+        <script>
+          var link = document.querySelector('link[rel="import"]');
+          var content = link.import;
+      
+          // Grab DOM from warning.html's document.
+          var el = content.querySelector('#fcs4cinlineContent');
+      
+          document.body.appendChild(el.cloneNode(true));
+        </script>
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe class="embed-responsive-item" src="https://www.chltcac.cuhk.edu.hk/activitiesreview"></iframe>
+        </div>
         
 <!--div class="accordion" id="accordionExample">
   <div class="card">
