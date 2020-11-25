@@ -23,6 +23,144 @@ img.emoji {
 	padding: 0 !important;
 }
 </style>
+<style type="text/css">
+  .vidContainer {
+    background-color: #FBF8F5;
+  }
+
+  .degreeContainer2 {
+    background-color: #FBF8F5;
+  }
+
+  .grad-item {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 0 0;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #f2eae0;
+    border-radius: 2px;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+  }
+
+  .grad-pic {
+    background-color: #f2eae0;
+    padding: .5rem .5rem .5rem .5rem ;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    display: flex;
+    align-items: center;
+  }
+
+  .grad-img {
+    width: 72px;
+    height: 72px;
+  }
+
+  .inline {
+    display: inline;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0 2rem 0 2rem;
+  }
+
+  .grad-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+  }
+
+  .grad-intro p {
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+  }
+
+  .grad-comment {
+    display: flex;
+    background-color: #362f2d;
+    color: #fff;
+    padding: 3rem 2rem 3rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 2px;
+  }
+
+  
+  .comment-icon {
+    display: flex;
+    align-self: center;
+    margin: .5rem 3rem 0 auto;
+    color:#534741;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+  }
+
+  .grad-item:hover {
+    border-color: #b7834c;
+    background-color:#FBF8F5;
+  }
+
+  .grad-item:hover > .comment-icon {
+    color: #b7834c;
+  }
+
+  .grad-item:hover > .grad-intro p{
+    color: #b7834c;
+  }
+
+  .quote-mark {
+    font-family: 'Bell MT', serif;
+    font-size: 5rem;
+    margin: -2rem 1rem 0 -.5rem;
+    color: #b7834c;
+  }
+
+  .quote-mark2 {
+    font-family: 'Bell MT', serif;
+    font-size: 4rem;
+    margin: auto 0rem -2rem 1rem;
+    bottom: 0;
+    color: #b7834c;
+  }
+
+  @media (max-width: 768px) {
+    .grad-item {
+    flex-direction: column;
+    }
+    .inline {
+      font-size: 1rem;
+    }
+    .grad-intro {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-left: 1.5rem;
+    padding: .2rem 0 0 0;
+  }
+  .comment-icon {
+    display: inline;
+    align-self: end;
+    margin: 0 1rem 1rem auto;
+    color: rgb(95, 95, 95);
+  }
+
+  .grad-comment {
+    padding: 1.5rem;
+  }
+
+  .quote-mark {
+    display: none;
+  }
+
+  .quote-mark2 {
+    display: none;
+  }
+
+  }
+
+</style>
 	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.chi.cuhk.edu.hk/wp-includes/css/dist/block-library/style.min.css?ver=5.5.1' type='text/css' media='all' />
 <link rel='stylesheet' id='bootstrap.css-css'  href='https://www.chi.cuhk.edu.hk/wp-content/themes/chi/frameworks/bootstrap/4.3.1/bootstrap.min.css?ver=5.5.1' type='text/css' media='all' />
 <link rel='stylesheet' id='chart.css-css'  href='https://www.chi.cuhk.edu.hk/wp-content/themes/chi/frameworks/Chart.js/2.8.0/Chart.min.css?ver=5.5.1' type='text/css' media='all' />
@@ -414,144 +552,7 @@ img.emoji {
         </div>
       </div>
       
-      <style>
-        .vidContainer {
-          background-color: #FBF8F5;
-        }
 
-        .degreeContainer2 {
-          background-color: #FBF8F5;
-        }
-
-        .grad-item {
-          display: flex;
-          flex-direction: row;
-          margin: 1rem 0 0 0;
-          border-style: solid;
-          border-width: 2px;
-          border-color: #f2eae0;
-          border-radius: 2px;
-          transition-duration: .5s;
-          transition-timing-function: ease-out;
-        }
-
-        .grad-pic {
-          background-color: #f2eae0;
-          padding: .5rem .5rem .5rem .5rem ;
-          border-top-left-radius: 2px;
-          border-bottom-left-radius: 2px;
-          display: flex;
-          align-items: center;
-        }
-
-        .grad-img {
-          width: 72px;
-          height: 72px;
-        }
-
-        .inline {
-          display: inline;
-          font-weight: bold;
-          margin-bottom: 0;
-          padding: 0 2rem 0 2rem;
-        }
-
-        .grad-intro {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          margin-left: 2rem;
-        }
-
-        .grad-intro p {
-          transition-duration: .5s;
-          transition-timing-function: ease-out;
-        }
-
-        .grad-comment {
-          display: flex;
-          background-color: #362f2d;
-          color: #fff;
-          padding: 3rem 2rem 3rem 2rem;
-          margin-bottom: 1rem;
-          border-radius: 2px;
-        }
-
-        
-        .comment-icon {
-          display: flex;
-          align-self: center;
-          margin: .5rem 3rem 0 auto;
-          color:#534741;
-          transition-duration: .5s;
-          transition-timing-function: ease-out;
-        }
-
-        .grad-item:hover {
-          border-color: #b7834c;
-          background-color:#FBF8F5;
-        }
-
-        .grad-item:hover > .comment-icon {
-          color: #b7834c;
-        }
-
-        .grad-item:hover > .grad-intro p{
-          color: #b7834c;
-        }
-
-        .quote-mark {
-          font-family: 'Bell MT', serif;
-          font-size: 5rem;
-          margin: -2rem 1rem 0 -.5rem;
-          color: #b7834c;
-        }
-
-        .quote-mark2 {
-          font-family: 'Bell MT', serif;
-          font-size: 4rem;
-          margin: auto 0rem -2rem 1rem;
-          bottom: 0;
-          color: #b7834c;
-        }
-
-        @media (max-width: 768px) {
-          .grad-item {
-          flex-direction: column;
-          }
-          .inline {
-            font-size: 1rem;
-          }
-          .grad-intro {
-          display: flex;
-          justify-content: right;
-          align-items: center;
-          margin-left: 1.5rem;
-          padding: .2rem 0 0 0;
-        }
-        .comment-icon {
-          display: inline;
-          align-self: end;
-          margin: 0 1rem 1rem auto;
-          color: rgb(95, 95, 95);
-        }
-
-        .grad-comment {
-          padding: 1.5rem;
-        }
-
-        .quote-mark {
-          display: none;
-        }
-
-        .quote-mark2 {
-          display: none;
-        }
-
-        }
-
-      </style>
 
       <div class="admissionSection mb-4 mb-sm-5">
         <h5 class="title">畢業生分享</h5>
