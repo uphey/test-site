@@ -61,6 +61,11 @@
     color: rgba(0,0,0,.45);
 }
 
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto grey;
+}
+
 .dropdown-item:active {
     background-color: #e3f2fd;
     color: #000000;
@@ -135,7 +140,7 @@ header {
 /* CONTENT STYLE */
 main {
     padding: 3rem 10rem 3rem 10rem;
-    background-color: #81adde;
+    background-color: #1d2e3b;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,7 +160,7 @@ main {
 
 .main-text {
   font-weight: 1000;
-  background-image: linear-gradient(#b9e1ff, #b9e1ff);
+  background-image: linear-gradient(#19629b, #19629b);
   background-repeat: no-repeat;
   background-position: 0% 100%;
   background-size: 100% .2rem;
@@ -175,12 +180,65 @@ main {
 
 .home-content {
     color: #000000;
-    background-color: white;
     background-color: rgb(255, 255, 255, .95);
-    padding: 3rem;
+    padding: 2rem 3rem 3rem 3rem;
     box-shadow: 0px 0px 30px rgb(0, 0, 0, .1);
     z-index: 1;
 }
+
+.content-text {
+    
+}
+
+.carousel {
+    height: ;
+}
+
+.carousel-item a {
+    color: #fff;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    padding: 2.5rem 7rem 2.5rem 7rem;
+    text-align: left;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6026785714285714) 64%, rgba(0,0,0,0) 100%);
+}
+
+.carousel-inner .carousel-item {
+    transition: -webkit-transform 1.8s ease;
+    transition: transform 1.8s ease;
+    transition: transform 1.8s ease, -webkit-transform 1.8s ease;
+  }
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 426px) {
+    .carousel-caption h5{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 766px) {
+    .carousel-caption h5{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 766px) {
+    .carousel-caption {
+        padding: 2rem 3rem 2rem 3rem;
+    }
+}
+
 
 #home-section-wrap {
     background-color: #1d2e3b;
@@ -192,11 +250,11 @@ main {
     grid-gap: 10px;
     padding: 3rem 1rem 1rem 1rem;
     z-index: 2;
+    max-width: 87%;
 }
 
 .section-content {
     color: #000000;
-    background-color: white;
     background-color: rgb(255, 255, 255, .95);
     margin: 0 1rem;
     margin-bottom: 2rem;
@@ -219,7 +277,7 @@ main {
 }
 
 .section-content img {
-    width: 100%;
+    width: 102%;
     transition: ease .8s;
 }
 
@@ -240,13 +298,52 @@ main {
     width:          0;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 1080px) {
+    .section-content {
+        height: 340px;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-content {
+        height: 320px;
+    }
+}
+
+@media (max-width: 885px) {
+    .section-content {
+        height: 310px;
+    }
+}
+
+@media (max-width: 831px) {
+    .section-content {
+        height: 300px;
+    }
+}
+
+@media (max-width: 800px) {
+    .section-content {
+        height: 280px;
+    }
+}
+
+.section-content-eng {
+    height: auto;
+}
+
+.section-content-eng h5 {
+    padding: 0.4rem 3rem 1.1rem 3rem;
+}
+
+@media (max-width: 766px) {
 .home-section {
     grid-template-columns: repeat(1, 1fr);
     padding: 2rem 1rem 1rem 1rem;
 }
 
 .section-content {
+    height: auto;
     margin: 0 .5rem;
     margin-bottom: 1rem;
 }
@@ -269,8 +366,39 @@ main {
     
 }
 
-.container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 87%;
+
+.titlecontainer {
+    position: relative;
+    text-align: center;
+  }
+  
+.title-caption {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    padding: 1rem 3rem;
+    text-align: left;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6026785714285714) 64%, rgba(0,0,0,0) 100%);
+}
+
+.title-caption h5 {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 426px) {
+    .title-caption h5{
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 766px) {
+    .title-caption h5{
+        font-size: 2rem;
+    }
 }
 
 @media (min-width: 2200px) {
@@ -288,6 +416,9 @@ main {
     .home-content {
     padding: 2.5rem;
 }
+    .title-caption {
+    padding: 1rem 2.5rem;
+    }
 }
 @media (max-width: 426px) {
     main {
@@ -296,6 +427,9 @@ main {
     .home-content {
     padding: 2rem;
 }
+.title-caption {
+    padding: 1rem 2rem;
+    }
 }
 
 @media (min-width: 565px) {
@@ -316,8 +450,10 @@ h5 {
     margin: 1rem 0;
 }
 
-.people-name {
+.people-name a {
     font-weight: 700;
+    text-decoration: underline;
+    color: #000000;
 }
 
 #people .table-light, .table-light>td, .table-light>th {
@@ -332,7 +468,7 @@ h5 {
     border-color: #bfd9ec;
 }
 
-@media (max-width: 426px) {
+@media (max-width: 575px) {
 .people-table td {
     display: block;
     padding: .2rem 0;
@@ -371,6 +507,62 @@ footer {
     width: 100%;
 }
 
+.pt-5, .py-5 {
+        padding-top: 2rem!important;
+        padding-bottom: 1rem!important;
+}
+
+@media (min-width: 992px) {
+.col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+}
+
+#stickyFooterContent {
+color: #ffffffab;
+font-size: .9rem;
+}
+
+#stickyFooterContent h2 {
+    font-size: 1.1rem;
+}
+
+#stickyFooterContent td {
+    vertical-align: top;
+  }
+
+#stickyFooterContent a {
+    color: #ffffffab;
+  }
+
+#stickyFooterMap {
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    /* width: 96%; */
+}
+
+#stickyFooterMap iframe, #stickyFooterMap #mapContent {
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+}
+
+
+.container, .container-lg, .container-sm, .container-xl {
+    max-width: 80%;
+}
+
+@media  (max-width: 426px) {
+    .container, .container-lg, .container-sm, .container-xl {
+        max-width: 90%;
+    }
+}
+
 .footertext {
     color: rgba(255, 255, 255,.5);
 }
@@ -382,6 +574,7 @@ footer {
 
 .footcontainer {
     padding: 1.5rem 3rem 1.5rem 3rem;
+    background-color: #151d21;
 }
 
 .right {
@@ -424,5 +617,9 @@ footer {
 .text-pad2 {
     padding: 0 0 0 .7rem;
 }
+
+.bi.bi-box-arrow-right {
+margin-bottom: 3px;
+  }
 
 /* EFFECT */
