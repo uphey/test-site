@@ -276,7 +276,7 @@ main {
 }
 
 .section-content img {
-    width: 102%;
+    width: 100%;
     transition: ease .8s;
 }
 
