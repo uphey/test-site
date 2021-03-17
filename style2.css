@@ -663,7 +663,7 @@ font-size: .9rem;
 
 @media (max-width: 575px) {
     .footcontainer {
-    padding: 1rem 3rem 0rem 3rem;
+    padding: 1rem 3rem 0.1rem 3rem;
     }
     
     .left {
