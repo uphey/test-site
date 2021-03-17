@@ -530,11 +530,15 @@ h5 {
 .resourceContainer {
     background-color: #e3f2fd;
     height: calc(100% - 54px);
+    border: solid #17a2b840 1px;
+    border-bottom: none;
 }
 
 .buttonContainer {
     background-color: #e3f2fd;
     height: 54px;
+    border: solid #17a2b840 1px;
+    border-top: none;
 }
 
 .outlineContainer {
