@@ -335,10 +335,6 @@ main {
     height: auto;
 }
 
-.section-content-eng h5 {
-    padding: 0.4rem 3rem 1.1rem 3rem;
-}
-
 @media (max-width: 766px) {
 .home-section {
     grid-template-columns: repeat(1, 1fr);
@@ -596,6 +592,10 @@ footer {
 }
 }
 
+#stickyFooterContent .stickyFooterInfoTable1 {
+    width: 100%;
+}
+
 #stickyFooterContent {
 color: #ffffffab;
 font-size: .9rem;
@@ -659,7 +659,7 @@ font-size: .9rem;
 
 @media (max-width: 575px) {
     .footcontainer {
-    padding: 1rem 3rem 0.1rem 3rem;
+    padding: 1rem 1.5rem 0.1rem 1.5rem;
     }
     
     .left {
@@ -700,5 +700,9 @@ margin-bottom: 3px;
 
   a {
     word-break: break-all;
+  }
+
+  .footcontainer a {
+    word-break: normal;
   }
 /* EFFECT */
